@@ -1,0 +1,30 @@
+.error {
+  margin-top: 0.25rem;
+  color: #ffffff;
+  right: 0;
+  top: -26px;
+  background: #cc0000;
+  animation-name: error-fade;
+  animation-duration: 5s;
+  animation-iteration-count: initial;
+  opacity: 0;
+  transition: opacity 0.5s;
+  display: none;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  align-items: flex-start;
+  &:before {
+    content: url("./../img/error_outline-24px.svg");
+    margin-right: 0.25rem;
+  }
+  &-ativo {
+    opacity: 1;
+    display: flex;
+  }
+
+  &-campo {
+    border: 1px solid #cc0000;
+  }
+}

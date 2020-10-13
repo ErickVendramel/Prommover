@@ -1,0 +1,14 @@
+.btn {
+  transition: 0.5s;
+
+  &-main {
+    color: $mainColor;
+    background-color: #ff5757;
+    color: #ffffff;
+
+    &:hover {
+      background: darken($mainColor, 15%);
+      color: #ffffff;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+.color {
+  &--main { color: $mainColor !important; };
+  &--off { color: $offColor !important; };
+}
+
+.font {
+  &--display-xl { font-size: 6rem !important; }
+  &--display-lg { font-size: 4rem !important; }
+  &--display { font-size: 3.25rem !important; }
+  &--xl { font-size: 2rem !important; }
+  &--lg { font-size: 1.25rem !important; }
+  &--md { font-size: 1rem !important; }
+  &--sm { font-size: 0.875rem !important; }
+  &--xm { font-size: 0.75rem !important; }
+}
+
+.mt-5-sm, .my-5-sm { @media (max-width: 1200px) { margin-top: 3rem !important; }}
+.mt-4-sm, .my-4-sm { @media (max-width: 1200px) { margin-top: 1.5rem !important; }}
+.mt-3-sm, .my-3-sm { @media (max-width: 1200px) { margin-top: 1rem !important; }}
+.mt-2-sm, .my-2-sm { @media (max-width: 1200px) { margin-top: 0.5rem !important; }}
+.mt-1-sm, .my-1-sm { @media (max-width: 1200px) { margin-top: 0.25rem !important; }}
+.mt-0-sm, .my-0-sm { @media (max-width: 1200px) { margin-top: 0 !important; }}
+
+.mb-5-sm, .my-5-sm { @media (max-width: 1200px) { margin-bottom: 3rem !important; }}
+.mb-4-sm, .my-4-sm { @media (max-width: 1200px) { margin-bottom: 1.5rem !important; }}
+.mb-3-sm, .my-3-sm { @media (max-width: 1200px) { margin-bottom: 1rem !important; }}
+.mb-2-sm, .my-2-sm { @media (max-width: 1200px) { margin-bottom: 0.5rem !important; }}
+.mb-1-sm, .my-1-sm { @media (max-width: 1200px) { margin-bottom: 0.25rem !important; }}
+.mb-0-sm, .my-0-sm { @media (max-width: 1200px) { margin-bottom: 0 !important; }}
+
+.pr-5-sm, .px-5-sm { @media (max-width: 1200px) { padding-right: 3rem !important; }}
+.pr-4-sm, .px-4-sm { @media (max-width: 1200px) { padding-right: 1.5rem !important; }}
+.pr-3-sm, .px-3-sm { @media (max-width: 1200px) { padding-right: 1rem !important; }}
+.pr-2-sm, .px-2-sm { @media (max-width: 1200px) { padding-right: 0.5rem !important; }}
+.pr-1-sm, .px-1-sm { @media (max-width: 1200px) { padding-right: 0.25rem !important; }}
+.pr-0-sm, .px-0-sm { @media (max-width: 1200px) { padding-right: 0 !important; }}
+
+.pl-5-sm, .px-5-sm { @media (max-width: 1200px) { padding-left: 3rem !important; }}
+.pl-4-sm, .px-4-sm { @media (max-width: 1200px) { padding-left: 1.5rem !important; }}
+.pl-3-sm, .px-3-sm { @media (max-width: 1200px) { padding-left: 1rem !important; }}
+.pl-2-sm, .px-2-sm { @media (max-width: 1200px) { padding-left: 0.5rem !important; }}
+.pl-1-sm, .px-1-sm { @media (max-width: 1200px) { padding-left: 0.25rem !important; }}
+.pl-0-sm, .px-0-sm { @media (max-width: 1200px) { padding-left: 0 !important; }}
+
+.mt-5-xl, .my-5-xl { @media (min-width: 1200px) { margin-top: 3rem !important; }}
+.mt-4-xl, .my-4-xl { @media (min-width: 1200px) { margin-top: 1.5rem !important; }}
+.mt-3-xl, .my-3-xl { @media (min-width: 1200px) { margin-top: 1rem !important; }}
+.mt-2-xl, .my-2-xl { @media (min-width: 1200px) { margin-top: 0.5rem !important; }}
+.mt-1-xl, .my-1-xl { @media (min-width: 1200px) { margin-top: 0.25rem !important; }}
+.mt-0-xl, .my-0-xl { @media (min-width: 1200px) { margin-top: 0 !important; }}
+
+.mb-5-xl, .my-5-xl { @media (min-width: 1200px) { margin-bottom: 3rem !important; }}
+.mb-4-xl, .my-4-xl { @media (min-width: 1200px) { margin-bottom: 1.5rem !important; }}
+.mb-3-xl, .my-3-xl { @media (min-width: 1200px) { margin-bottom: 1rem !important; }}
+.mb-2-xl, .my-2-xl { @media (min-width: 1200px) { margin-bottom: 0.5rem !important; }}
+.mb-1-xl, .my-1-xl { @media (min-width: 1200px) { margin-bottom: 0.25rem !important; }}
+.mb-0-xl, .my-0-xl { @media (min-width: 1200px) { margin-bottom: 0 !important; }}
+
+.pr-5-xl, .px-5-xl { @media (min-width: 1200px) { padding-right: 3rem !important; }}
+.pr-4-xl, .px-4-xl { @media (min-width: 1200px) { padding-right: 1.5rem !important; }}
+.pr-3-xl, .px-3-xl { @media (min-width: 1200px) { padding-right: 1rem !important; }}
+.pr-2-xl, .px-2-xl { @media (min-width: 1200px) { padding-right: 0.5rem !important; }}
+.pr-1-xl, .px-1-xl { @media (min-width: 1200px) { padding-right: 0.25rem !important; }}
+.pr-0-xl, .px-0-xl { @media (min-width: 1200px) { padding-right: 0 !important; }}
+
+.pl-5-xl, .px-5-xl { @media (min-width: 1200px) { padding-left: 3rem !important; }}
+.pl-4-xl, .px-4-xl { @media (min-width: 1200px) { padding-left: 1.5rem !important; }}
+.pl-3-xl, .px-3-xl { @media (min-width: 1200px) { padding-left: 1rem !important; }}
+.pl-2-xl, .px-2-xl { @media (min-width: 1200px) { padding-left: 0.5rem !important; }}
+.pl-1-xl, .px-1-xl { @media (min-width: 1200px) { padding-left: 0.25rem !important; }}
+.pl-0-xl, .px-0-xl { @media (min-width: 1200px) { padding-left: 0 !important; }}
+
+.mobile {
+  @media only screen and (min-width: 576px) {
+    display: none;
+  }
+}
+
+.desktop {
+  @media only screen and (max-width: 576px) {
+    display: none;
+  }
+}

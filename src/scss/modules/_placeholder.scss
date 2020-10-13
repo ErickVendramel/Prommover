@@ -1,0 +1,35 @@
+.placeholder {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transition: 0.2s;
+  color: #555;
+  cursor: text;
+
+  &-ativo {
+    top: -12px;
+    left: 0;
+    font-size: 0.8rem;
+    color: #999999;
+    background: #ffffff;
+    transition: 0.2s;
+  }
+}
+
+.placeholder-select {
+  position: absolute;
+  left: 0;
+  top: 8px;
+  transition: 0.2s;
+  color: #555;
+  cursor: text;
+
+  &-ativo {
+    top: -12px;
+    left: 0;
+    font-size: 0.8rem;
+    color: #999999;
+    background: #ffffff;
+    transition: 0.2s;
+  }
+}

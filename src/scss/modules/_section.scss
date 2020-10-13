@@ -1,0 +1,85 @@
+.section {
+  padding: 4rem 0;
+
+  h5,
+  h5 + p {
+    text-align: center;
+  }
+
+  h5 {
+    font-size: 31px;
+  }
+  h6 {
+    font-size: 20px;
+  }
+  &--hero {
+    padding: 2rem 0 0;
+    background-color: #ffd000;
+    border-bottom-left-radius: 7%;
+    border-bottom-right-radius: 7%;
+    &.no-background {
+      background-image: none !important;
+    }
+
+    .container > .row {
+      @media (min-width: 992px) {
+        min-height: calc(100vh - 4rem);
+      }
+    }
+    // .people {
+    //   margin-bottom: -2.8%;
+    // }
+    @media (min-width: 992px) {
+      background-image: url("./../img/Circles.png");
+      background-position: center center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    h4 {
+      font-size: 31px;
+      font-weight: bold;
+      color: white;
+
+      & + p {
+        font-size: 20px;
+      }
+    }
+    h3 {
+      font-size: 33px;
+      color: #ff5757;
+    }
+  }
+
+  &--steps {
+    background-color: $offColor;
+    color: #000000;
+  }
+
+  &--rights {
+    text-align: center;
+
+    h5 {
+      font-size: 31px;
+    }
+  }
+
+  &--footer {
+    background-color: $mainColor;
+    padding: 1rem 0;
+    color: #ffffff;
+    font-weight: 400;
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    a,
+    span {
+      color: #ffffff;
+      font-size: 12px;
+    }
+  }
+}
