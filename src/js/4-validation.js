@@ -128,10 +128,24 @@ function validaEmpresa() {
       empresaError,
       errors,
       "Campo obrigatório",
-      "nome_blank"
+      "empresa_blank"
     );
     return false;
   } else {
-    removeErro(empresa, empresaError, errors, "nome_blank");
+    removeErro(empresa, empresaError, errors, "empresa_blank");
+  }
+}
+function validaSegmento() {
+  if (campoVazio(segmento)) {
+    adicionaErro(
+      segmento,
+      segmentoError,
+      errors,
+      "Campo obrigatório",
+      "segmento_blank"
+    );
+    return false;
+  } else {
+    removeErro(segmento, segmentoError, errors, "segmento_blank");
   }
 }

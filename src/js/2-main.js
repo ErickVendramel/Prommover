@@ -6,6 +6,7 @@ const nome = $("#name");
 const email = $("#email");
 const telefonecelular = $("#phone");
 const empresa = $("#empresa");
+const segmento = $("#segment");
 const btnEnviar = $("#send");
 
 const aff_id = localStorage.getItem("aff_id");
@@ -17,6 +18,7 @@ const nomeError = $("#error-name");
 const emailError = $("#error-email");
 const telefonecelularError = $("#error-phone");
 const empresaError = $("#error-empresa");
+const segmentoError = $("#error-segment");
 
 // Máscaras
 telefonecelular.mask("(00) 00000-0000");
@@ -34,6 +36,9 @@ telefonecelular.blur(function () {
 empresa.blur(function () {
   validaEmpresa();
 });
+segmento.on('change', function () {
+  validaSegmento();
+});
 
 // ENVIAR BTN
 btnEnviar.click(function () {
@@ -41,6 +46,7 @@ btnEnviar.click(function () {
   validaEmail();
   validaTelefoneCelular();
   validaEmpresa();
+  validaSegmento();
 
   if (errors.length === 0) {
     $.post(

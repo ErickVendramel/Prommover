@@ -13,7 +13,7 @@
     font-size: 20px;
   }
   &--hero {
-    padding: 2rem 0 0;
+    padding: 4rem 0;
     background-color: #ffd000;
     border-bottom-left-radius: 7%;
     border-bottom-right-radius: 7%;
@@ -34,6 +34,8 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
+      padding: 2rem 0 0;
+
     }
 
     h4 {
