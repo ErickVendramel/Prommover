@@ -8415,6 +8415,30 @@ input {
     margin-top: 0 !important; } }
 
 @media (min-width: 1200px) {
+  .pt-5-xl, .my-5-xl {
+    padding-top: 3rem !important; } }
+
+@media (min-width: 1200px) {
+  .pt-4-xl, .my-4-xl {
+    padding-top: 1.5rem !important; } }
+
+@media (min-width: 1200px) {
+  .pt-3-xl, .my-3-xl {
+    padding-top: 1rem !important; } }
+
+@media (min-width: 1200px) {
+  .pt-2-xl, .my-2-xl {
+    padding-top: 0.5rem !important; } }
+
+@media (min-width: 1200px) {
+  .pt-1-xl, .my-1-xl {
+    padding-top: 0.25rem !important; } }
+
+@media (min-width: 1200px) {
+  .pt-0-xl, .my-0-xl {
+    padding-top: 0 !important; } }
+
+@media (min-width: 1200px) {
   .mb-5-xl, .my-5-xl {
     margin-bottom: 3rem !important; } }
 
@@ -8490,7 +8514,7 @@ input {
   .mobile {
     display: none; } }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 1200px) {
   .desktop {
     display: none; } }
 
@@ -8512,13 +8536,11 @@ input {
   .section--hero {
     padding: 4rem 0;
     background-color: #ffd000;
-    border-bottom-left-radius: 7%;
-    border-bottom-right-radius: 7%; }
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    height: 100%; }
     .section--hero.no-background {
       background-image: none !important; }
-    @media (min-width: 992px) {
-      .section--hero .container > .row {
-        min-height: calc(100vh - 4rem); } }
     @media (min-width: 992px) {
       .section--hero {
         background-image: url("./../img/Circles.png");

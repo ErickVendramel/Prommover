@@ -49,25 +49,55 @@ btnEnviar.click(function () {
   validaSegmento();
 
   if (errors.length === 0) {
-    $.post(
-      "./leads/newLead.php",
-      {
+    btnEnviar.attr("disabled", "true");
+
+    $.ajax({
+      type: "POST",
+      // url: "http://localhost:3333/lead",
+      url: "https://api.meudireitolegal.com.br/lead",
+      // url: "https://jsonplaceholder.typicode.com/posts/",
+      data: JSON.stringify({
         name: nome.val(),
         email: email.val(),
-        phone: telefonecelular.val(),
-        empresa: empresa.val(),
+        mobile: telefonecelular.val().replace(/[ -\(\)-]/g, ""),
+        prommoverLead: {
+          company: empresa.val(),
+          segment: segmento.val(),
+        },
         url: window.location.href,
-      },
-      function (data) {
-        if (data === "SUCESSO") {
-          console.log("Sucesso:", data);
+      }),
+      contentType: "application/json; charset=utf-8",
+      dataType: "json",
+      success: function (data) {
+        if (data.id) {
+          localStorage.setItem("isEmailDuplicated", data.isEmailDuplicated);
+          localStorage.setItem("name", nome.val());
           localStorage.setItem("email", email.val());
+          localStorage.setItem(
+            "mobile",
+            telefonecelular.val().replace(/[ -\(\)-]/g, "")
+          );
+          localStorage.setItem("url", window.location.href);
+          localStorage.setItem("id", data.id);
+
+          let url = new URL(window.location.href);
+          localStorage.setItem("mktCode", url.searchParams.get("MktCode"));
+          localStorage.setItem("pass", url.searchParams.get("Pass"));
+          localStorage.setItem("tid", url.searchParams.get("tid"));
+          localStorage.setItem(
+            "utm_source",
+            url.searchParams.get("utm_source")
+          );
+
           window.location.href = "sucesso.html";
+
         } else {
-          console.log("Erro:", data);
           window.location.href = "error.html";
         }
-      }
-    );
+      },
+      failure: function (err) {
+        window.location.href = "error.html";
+      },
+    });
   }
 });

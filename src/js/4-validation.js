@@ -89,7 +89,7 @@ function validaTelefoneCelular() {
       telefonecelular,
       telefonecelularError,
       errors,
-      "Telefone incompleto",
+      "Celular incompleto",
       "telefonecelular_incompleto"
     );
     return false;
@@ -108,7 +108,7 @@ function validaTelefoneCelular() {
       telefonecelular,
       telefonecelularError,
       errors,
-      "Telefone invalido",
+      "Celular invalido",
       "telefonecelular_invalido"
     );
     return false;
