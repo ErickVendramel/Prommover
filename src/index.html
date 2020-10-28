@@ -1,125 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prommover - o seu parceiro de negocios</title>
-    <link type="image/x-icon" href="img/favicon-32x32.png" rel="shortcut icon" />
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <!--inject:css-->
-    <link rel="stylesheet" href="css/style.css">
-    <!--endinject-->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"/>
-    <link rel="manifest" href="/site.webmanifest" />
-   
-  </head>
-  <body>
-    <main>
-      
-      <section class="section section--hero">
-        <div class="container">
-          <div class="row">
 
-            <div class="col-lg-7 d-flex flex-column">
-              <a href="index.html">
-                <img src="./img/logo.png" alt="" class="logo mb-4" />
-              </a>
-              <img class="desktop img-fluid" src="./img/homem.png">
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prommover - o seu parceiro de negocios</title>
+  <link type="image/x-icon" href="img/favicon-32x32.png" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+  <!--inject:css-->
+  <link rel="stylesheet" href="css/style.css">
+  <!--endinject-->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MHMGP4N');</script>
+  <!-- End Google Tag Manager -->
+</head>
 
-            <div class="col-lg-5 pt-5-xl">
-              <h4 class="mt-5-xl">Venda mais e prospecte os</h4>
-              <h3 class="mb-3">melhores Leads e PDVs</h3>
+<body>
+  <main>
 
-              <section id="leadForm" class="form rounded px-4 pb-4 pt-3">
-                <h6 class="mb-4">
-                  Preencha o formulário que
-                  <span class="d-block">nossa equipe entrará em contato</span>
-                </h6>
+    <section class="section section--hero">
+      <div class="container">
+        <div class="row">
 
-                <div class="form-group">
-                  <label class="placeholder rounded" for="name"
-                    >Nome completo</label
-                  >
-                  <input
-                    id="name"
-                    class="form-control"
-                    name="name"
-                    type="text"
-                  />
-                  <span id="error-name" class="error"> </span>
-                </div>
-
-                <div class="form-group">
-                  <label class="placeholder rounded" for="email">E-mail</label>
-                  <input
-                    id="email"
-                    class="form-control"
-                    name="email"
-                    type="text"
-                  />
-                  <span id="error-email" class="error"></span>
-                </div>
-
-                <div class="form-group">
-                  <label class="placeholder rounded" for="phone">
-                    Celular
-                  </label>
-                  <input
-                    id="phone"
-                    class="form-control"
-                    name="phone"
-                    type="tel"
-                  />
-                  <span id="error-phone" class="error"></span>
-                </div>
-                <div class="form-group">
-                  <label class="placeholder rounded" for="empresa"
-                    >Empresa</label
-                  >
-                  <input
-                    id="empresa"
-                    class="form-control"
-                    name="empresa"
-                    type="text"
-                  />
-                  <span id="error-empresa" class="error"> </span>
-                </div>
-                <div class="form-group">
-                  <label class="placeholder-select-ativo placeholder-select" for="segment">Segmento</label> 
-                   <select id="segment" class="form-control" name="segment">
-                      <option value="" selected="" disabled="">Selecione</option>
-                      <option value="Juridico/Revisional">Jurídico/Revisional</option>
-                      <option value="Saude/Odonto">Saúde/Odonto</option>
-                      <option value="Consorcio">Consórcio</option>
-                      <option value="Curso On-line">Curso On-line</option>
-                      <option value="Campanha B2B">Campanha B2B</option>
-                      <option value="Outros">Outros</option>
-                  </select>
-                  <span id="error-segment" class="rounded error"></span>
-                </div>
-               
-                <button
-                  id="send"
-                  class="btn btn-main btn-lg w-100"
-                  name="enviar"
-                  type="button"
-                >
-                  Eu quero
-                </button>
-
-                
-              </section>
-              
-            </div>
+          <div class="col-lg-7 d-flex flex-column">
+            <a href="index.html">
+              <img src="./img/logo.png" alt="" class="logo mb-4" />
+            </a>
+            <img class="desktop img-fluid" src="./img/homem.png">
           </div>
-          <!-- END ROW -->
-        </div>
-      </section>
 
-      <!-- <section class="section section--steps">
+          <div class="col-lg-5">
+            <h4 class="mt-5-xl">Venda mais e prospecte os</h4>
+            <h3 class="mb-3">melhores Leads do mercado!</h3>
+
+
+            <section id="leadForm" class="form rounded px-4 pb-4 pt-3">
+              <h6 class="mb-4">
+                Preencha o formulário que
+                <span class="d-block">nossa equipe entrará em contato</span>
+              </h6>
+
+              <div class="form-group">
+                <label class="placeholder rounded" for="name">Nome completo</label>
+                <input id="name" class="form-control" name="name" type="text" />
+                <span id="error-name" class="error"> </span>
+              </div>
+
+              <div class="form-group">
+                <label class="placeholder rounded" for="email">E-mail</label>
+                <input id="email" class="form-control" name="email" type="text" />
+                <span id="error-email" class="error"></span>
+              </div>
+
+              <div class="form-group">
+                <label class="placeholder rounded" for="phone">
+                  Celular
+                </label>
+                <input id="phone" class="form-control" name="phone" type="tel" />
+                <span id="error-phone" class="error"></span>
+              </div>
+              <div class="form-group">
+                <label class="placeholder rounded" for="empresa">Empresa</label>
+                <input id="empresa" class="form-control" name="empresa" type="text" />
+                <span id="error-empresa" class="error"> </span>
+              </div>
+              <div class="form-group">
+                <label class="placeholder-select-ativo placeholder-select" for="segment">Segmento</label>
+                <select id="segment" class="form-control" name="segment">
+                  <option value="" selected="" disabled="">Selecione</option>
+                  <option value="Assessorias">Assessorias</option>
+                  <option value="Juridico">Juridico</option>
+                  <option value="Saúde/Odonto">Saúde/Odonto</option>
+                  <option value="Curso On-line">Curso On-line</option>
+                  <option value="Telecom">Telecom</option>
+                  <option value="Campanha B2B">Campanha B2B</option>
+                  <option value="Outros">Outros</option>
+                </select>
+                <span id="error-segment" class="rounded error"></span>
+              </div>
+
+              <button id="send" class="btn btn-main btn-lg w-100" name="enviar" type="button">
+                Eu quero
+              </button>
+
+
+            </section>
+
+          </div>
+        </div>
+        <!-- END ROW -->
+      </div>
+    </section>
+
+    <!-- <section class="section section--steps">
         <div class="container">
           <h5 class="mb-5">Quais as vantagens?</h5>
 
@@ -217,72 +201,76 @@
         </div>
       </section> -->
 
-      <section class="section section--steps">
-        <div class="container">
-          <h5 class="mb-5">Como funciona?</h5>
-          
-            <div class="row">
-              <div class="col-12 col-xl text-center">
-                <img class="card" src="img/loans4-home-icon1.png" alt="Card image">
-                <h6 class="pt-3 pb-2" >Análise de Perfil</h6>
-                <p>
-                  Traçamos o perfil do seu cliente, hábitos, concorrência para que possamos planejar ações para geração do melhor Lead para seu negócio 
-                </p>
-              </div>
-              <div class="col-12 col-xl text-center">
-                <img class="card" src="img/loans4-home-icon2.png" alt="Card image">
-                <h6 class="pt-3 pb-2" >Ativação de Campanhas</h6>
-                <p>
-                  Ao ativarmos as ações, o prospect passara por alguma das páginas de interesse e ira cadastrar seus dados para aquisição ou poderá localizar seus produtos / serviços de outras formas.
-                </p>
-              </div>
-              <div class="col-12 col-xl text-center">
-                <img class="card" src="img/loans4-home-icon3.png" alt="Card image">
-                <h6 class="pt-3 pb-2" >Entrega</h6>
-                <p>
-                  Entrega de oportunidades para seu time de vendas fechar negócio
-                </p>
-              </div>
-          </div>
-          </div>
-          
-      </section>
-    
+    <section class="section section--steps">
+      <div class="container">
+        <h5 class="mb-5">Como funciona?</h5>
 
-
-      <section class="section section--rights">
-        <div class="container">
-          <h2 class="mb-7">
-            Promovemos mais de 200 marcas e empresas em 2020!
-          </h2>
-          <p class="mb-5">O sucesso de nossos clientes é o que nos satisfaz, gostamos do que fazemos e além disso focamos em nossos clientes.</p>
-            </div>
-            
-          </div>
-        </div>
-        
-        
-      </section>
-      
-      <footer class="section section--footer">
-        <div class="container">
-          <div>
-
-            <p class="font--xm mb-0 mr-5 d-inline-block">
-              &copy; 2020 prommover.com.br - Todos os direitos reservados. 
+        <div class="row">
+          <div class="col-12 col-xl text-center">
+            <img class="card" src="img/loans4-home-icon1.png" alt="Card image">
+            <h6 class="pt-3 pb-2">Análise de Perfil</h6>
+            <p>
+              Traçamos o perfil do seu cliente, hábitos, concorrência para que possamos planejar ações para geração do
+              melhor Lead para seu negócio
             </p>
           </div>
-
-        
+          <div class="col-12 col-xl text-center">
+            <img class="card" src="img/loans4-home-icon2.png" alt="Card image">
+            <h6 class="pt-3 pb-2">Ativação de Campanhas</h6>
+            <p>
+              Ao ativarmos as ações, o prospect passara por alguma das páginas de interesse e ira cadastrar seus dados
+              para aquisição ou poderá localizar seus produtos / serviços de outras formas.
+            </p>
+          </div>
+          <div class="col-12 col-xl text-center">
+            <img class="card" src="img/loans4-home-icon3.png" alt="Card image">
+            <h6 class="pt-3 pb-2">Entrega</h6>
+            <p>
+              Entrega de oportunidades para seu time de vendas fechar negócio
+            </p>
+          </div>
         </div>
-      </footer>
-    </main>
-    <!--inject:js-->
-    <script src="js/0-vendors.js"></script>
-    <script src="js/1-functions.js"></script>
-    <script src="js/2-main.js"></script>
-    <script src="js/3-animation.js"></script>
-    <script src="js/4-validation.js"></script>
-    <!--endinject-->
-  </body>
+      </div>
+
+    </section>
+
+
+
+    <section class="section section--rights">
+      <div class="container">
+        <h2 class="mb-7">
+          Promovemos mais de 200 marcas e empresas em 2020!
+        </h2>
+        <p class="mb-5">O sucesso de nossos clientes é o que nos satisfaz, gostamos do que fazemos e além disso focamos
+          em nossos clientes.</p>
+      </div>
+
+      </div>
+      </div>
+
+
+    </section>
+
+    <footer class="section section--footer">
+      <div class="container">
+        <div>
+
+          <p class="font--xm mb-0 mr-5 d-inline-block">
+            &copy; 2020 prommover.com.br - Todos os direitos reservados.
+          </p>
+        </div>
+
+
+      </div>
+    </footer>
+  </main>
+  <!--inject:js-->
+  <script src="js/0-vendors.js"></script>
+  <script src="js/1-functions.js"></script>
+  <script src="js/2-main.js"></script>
+  <script src="js/3-animation.js"></script>
+  <script src="js/4-validation.js"></script>
+  <!--endinject-->
+</body>
+
 </html>

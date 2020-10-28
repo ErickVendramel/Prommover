@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,24 +14,50 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 	<link rel="manifest" href="/site.webmanifest">
-	
+	<!-- Google Tag Manager -->
+	<script>(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-MHMGP4N');</script>
+	<!-- End Google Tag Manager -->
+
+	<script>
+		dataLayer.push({
+			"name": localStorage.getItem("name"),
+			"email": localStorage.getItem("email"),
+			"phone": localStorage.getItem("mobile"),
+			"isEmailDuplicated": localStorage.getItem("isEmailDuplicated"),
+			"hash": localStorage.getItem("id"),
+			"mktCode": localStorage.getItem("mktCode"),
+			"pass": localStorage.getItem("pass"),
+			"tid": localStorage.getItem("tid"),
+			"utm_source": localStorage.getItem("utm_source"),
+		});
+		localStorage.clear();
+	</script>
+
 </head>
+
 <body>
 	<main>
 		<section class="section section--hero d-flex flex-column min-vh-100 p-0 text-center no-background">
 			<div class="container pb-5 mt-5">
 
 				<img src="./img/logo.png" alt="" class="logo mb-4">
-        <h4 class="mt-5">Seus dados foram enviados com sucesso!</h4>
-        <p class="font-xl">Em breve, nossa equipe estrará em contato!</p>
+				<h4 class="mt-5">Seus dados foram enviados com sucesso!</h4>
+				<p class="font-xl">Em breve, nossa equipe estrará em contato!</p>
 
-      </div>
-      
-      <footer class="section section--footer mt-auto">
-        <div class="container">
-          <p class="font--xm mb-0">&copy; 2020 prommover.com.br - Todos os direitos reservados. </p>
-        </div>
-      </footer>
+			</div>
+
+			<footer class="section section--footer mt-auto">
+				<div class="container">
+					<p class="font--xm mb-0">&copy; 2020 prommover.com.br - Todos os direitos reservados. </p>
+				</div>
+			</footer>
 		</section>
 
 		<section id="pixel"></section>
@@ -44,4 +71,5 @@
 	<script src="js/4-validation.js"></script>
 	<!--endinject-->
 </body>
+
 </html>
